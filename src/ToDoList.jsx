@@ -5,6 +5,7 @@ const ToDoList = () =>{
         <>
             <div>
                 <div>
+                <br/>
                 <h1 className='heading_style'>ToDo List</h1>
                 </div> 
             </div>
