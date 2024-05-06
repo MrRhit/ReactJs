@@ -1,28 +1,28 @@
-import React from 'react';
-import ReactDOM from 'react-dom';
+import  React from "react";
+import ReactDom from "react-dom";
+import Card from "./Card";
+import { IMAGES } from "./images.constants";
 import './index.css';
-import App from './App';
-import  {add, sub, div, mul} from './Calculate';
+import sdata from "./Data";
+      
+const netflix = "Top Netflix Movies Here ! "
 
-
-const arr = ['Ajay', 'Vijay', 'Pankaj'];
-// In React v16 it's possible for render to return 
-// an array of elements
-// const root = ReactDOM.createRoot(document.getElementById('root'));
-// root.render(<h1>Hello World ! </h1>);
-
-ReactDOM.render(
-  <>
-    <App/>
-     <p>The Sum of two no is { add(30,23)}</p>
-     <p>The Sum of two no is { sub(30,23)}</p>
-     <p>The Sum of two no is { div(30,23)}</p>
-     <p>The Sum of two no is { mul(30,23)}</p>
-  </>
-
-,document.getElementById("root"));
-
-const h1 = document.createElement("h1");
-h1.innerHTML = "Hello World Again";
-document.getElementById("root").appendChild(h1);
-
+ReactDom.render(
+    <>
+    <h1 className="netflix">{netflix}</h1>
+     { sdata.map((val, index) => {
+        const imageKey = Object.keys(IMAGES)[index];
+        return (
+          <>
+            <Card 
+              key = { val.id }
+              imgsrc={IMAGES[imageKey]}
+              title = { val.title }
+              sname = { val.sname }
+              link = { val.link }
+            />
+        </>
+        )
+      })}
+    </>
+, document.getElementById("root"));
