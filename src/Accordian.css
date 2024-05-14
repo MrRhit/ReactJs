@@ -1,0 +1,53 @@
+.content_style{
+    width: 400px;
+    border: 1px solid black;
+    border-radius: 10px;
+    margin: 5px auto;
+    padding: 10px;
+    height: auto;
+    overflow: auto;
+    background-color: rgb(232, 233, 234);
+    font-family: "Josefin Sans", sans-serif;
+}
+
+.accordian_text{
+    text-align: center;
+    font-size: 18px;
+    background-color: rgb(192, 211, 211);
+    border-radius: 10px;
+}
+
+.accordian_question {
+    display: flex;
+    align-items: center; /* Vertically align items */
+    margin-left: 10px;
+    margin-bottom: 10px;
+    background-color: rgb(191, 228, 228);
+    padding: 10px;
+    border-radius: 5px;
+  }
+
+  .accordian_answer{
+    background-color: rgb(127, 184, 165);
+    padding: 10px;
+    border-radius: 10px;
+  }
+  
+  .add_icon {
+    font-size: 18px; /* Adjust the font size as needed */
+    width: 30px; /* Adjust the width as needed */
+    height: 30px; /* Adjust the height as needed */
+    border: 2px solid #ccc; /* Adjust the border width and color */
+    border-radius: 50%; /* To create a circular shape */
+    text-align: center;
+    line-height: 26px; /* To vertically center the plus sign */
+    background-color: #f0f0f0; /* Adjust the background color */
+    cursor: pointer; /* To indicate that it's clickable */
+    margin-right: 10px; /* Add some space to the right of the plus icon */
+  }
+  
+  .accordian_question p {
+    margin: 0; /* Remove default margins */
+  }
+  
+  
